@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="p-6">
+        <li class="py-3">
+            <div class="text-lg font-semibold flex justify-between">
+                <p h-12>About Us</p>
+                <div id="onea" class="hover:bg-gray-300 h-10 w-10 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="hidden" id="oneb">
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Our Heritage</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Our Coffee</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Stories and News</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Investor Relations</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Poilicies and Standards</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Customer Services</li>
+            </ul>
+        </li>
+        <li class="py-3">
+            <div class="text-lg font-semibold flex justify-between">
+                <p h-12>Careers</p>
+                <div id="twoa" class="hover:bg-gray-300 h-10 w-10 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="hidden" id="twob">
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Culture and Values</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">Inclusion, Diversity, and Equity</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">College Achievement Plan</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">U.S. Careers</li>
+                <li class="text-gray-600 text-sm my-4 hover:text-black cursor-pointer">International Careers</li>
+            </ul>
+        </li>
+        <li class="py-3"><div class="text-lg font-semibold flex justify-between">
+            <p h-12>Social Impact</p>
+            <div class="hover:bg-gray-300 h-10 w-10 p-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+            </div>
+        </li>
+        <li class="py-3">
+            <div class="text-lg font-semibold flex justify-between">
+                <p h-12>For Business Partners</p>
+                <div class="hover:bg-gray-300 h-10 w-10 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+        </li>
+        <li class="py-3">
+            <div class="text-lg font-semibold flex justify-between">
+                <p h-12>Order and Pickup</p>
+                <div class="hover:bg-gray-300 h-10 w-10 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script>
+        const onea=document.querySelector('#onea');
+        const oneb=document.querySelector('#oneb');
+        const twoa=document.querySelector('#twoa');
+        const twob=document.querySelector('#twob');
+
+        onea.addEventListener('click', ()=>{
+            if(oneb.classList.contains('hidden')){
+                oneb.classList.remove('hidden');
+            }
+            else{
+                oneb.classList.add('hidden');
+            }
+        })
+        twoa.addEventListener('click', ()=>{
+            if(twob.classList.contains('hidden')){
+                twob.classList.remove('hidden');
+            }
+            else{
+                twob.classList.add('hidden');
+            }
+        })
+
+    </script>
+</body>
+</html>
